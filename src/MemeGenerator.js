@@ -44,7 +44,6 @@ class MemeGenerator extends Component {
                 placeholder="Bottom Text"
                 onChange={this.handleChange}
               />
-            
             </form>
             <h1>MEME GENERATOR SECTION</h1>
                 </div>
