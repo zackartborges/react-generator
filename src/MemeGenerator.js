@@ -10,7 +10,7 @@ class MemeGenerator extends Component {
             allMemeImgs: []
         }
     }
-    
+
     componentDidMount() {
       fetch("https://api.imgflip.com/get_memes")
           .then(response => response.json())
@@ -22,7 +22,25 @@ class MemeGenerator extends Component {
   }
     render() {
         return (
+          <div>
+            <form className ="meme-form">
+              <input
+                type="text"
+                name="topText"
+                value={this.state.topText}
+                placeholder="Top Text"
+              />
+              
+              <input
+                type="text"
+                name="bottomText"
+                value={this.state.bottomText}
+                placeholder="Bottom Text"
+              />
+            
+            </form>
             <h1>MEME GENERATOR SECTION</h1>
+                </div>
         )
     }
 }
